@@ -1,4 +1,4 @@
-package com.example.navigation_smd_7a;
+package com.example.product_management_mobile_app;
 
 import android.os.Bundle;
 
