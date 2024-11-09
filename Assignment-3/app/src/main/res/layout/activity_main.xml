@@ -7,13 +7,30 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tabLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:tabIndicatorHeight="3dp"
+        />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/tabLayout"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/viewpager2"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:id="@+id/fab_add"
+        android:src="@drawable/add_icon"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_margin="70dp"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
