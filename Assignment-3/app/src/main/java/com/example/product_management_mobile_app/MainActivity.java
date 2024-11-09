@@ -144,3 +144,5 @@ public class MainActivity extends AppCompatActivity {
         adapter = new ViewPagerAdapter(this);
         vp2.setAdapter(adapter);// Stay on current tab
     }
+
+}
